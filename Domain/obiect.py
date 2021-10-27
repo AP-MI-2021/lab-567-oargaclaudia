@@ -1,55 +1,50 @@
 def creeazaObiect(id, nume, descriere, pret, locatie):
     '''
-    Creeaza un dictionar ce reprezinta un obiect
+    Creeaza o lista ce reprezinta un obiect
     :param id: string
     :param nume: string
     :param descriere: string
     :param pret: float
     :param locatie: string
-    :return: un dictionar ce contine un obiect
+    :return: o lista ce contine un obiect
     '''
-    return {
-        "id": id,
-        "nume": nume,
-        "descriere": descriere,
-        "pret": pret,
-        "locatie": locatie
-    }
-def getId(obiect):
+    lista=[id,nume,descriere,pret,locatie]
+    return lista
+def getId(lista):
     '''
     Da id-ul unui obiect
-    :param obiect: dictionar ce retine un obiect
+    :param obiect: lista ce retine un obiect
     :return: id-ul obiectului
     '''
-    return obiect["id"]
-def getNume(obiect):
+    return lista[0]
+def getNume(lista):
     '''
     Da numele unui obiect
-    :param obiect: dictionar ce retine un obiect
+    :param obiect: lista ce retine un obiect
     :return: numele obiectului
     '''
-    return obiect["nume"]
-def getDescriere(obiect):
+    return lista[1]
+def getDescriere(lista):
     '''
     Da descrierea unui obiect
-    :param obiect: dictionar ce retine un obiect
+    :param obiect: lista ce retine un obiect
     :return: descrierea obiectului
     '''
-    return obiect["descriere"]
-def getPret(obiect):
+    return lista[2]
+def getPret(lista):
     '''
     Da pretul unui obiect
-    :param obiect: dictionar ce retine un obiect
+    :param obiect: lista ce retine un obiect
     :return: pretul obiectului
     '''
-    return obiect["pret"]
-def getLocatie(obiect):
+    return lista[3]
+def getLocatie(lista):
     '''
     Da locatia unui obiect
-    :param obiect: dictionar ce retine un obiect
+    :param obiect: lista ce retine un obiect
     :return: locatia obiectului
     '''
-    return obiect["locatie"]
+    return lista[4]
 def toString(obiect):
     return "Id: {}, Nume: {}, Descriere: {}, Pret: {}, Locatie: {}".format(
         getId(obiect),
