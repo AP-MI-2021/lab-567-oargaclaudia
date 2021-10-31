@@ -1,6 +1,7 @@
 from Domain.obiect import creeazaObiect, getId, getNume, getLocatie, getPret, getDescriere
 
 
+
 def testObiect():
     obiect = creeazaObiect("1", "Dulap", "Utilizat pentru depozitarea obiectelor", 550.2, "APSM")
 
