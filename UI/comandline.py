@@ -28,7 +28,7 @@ def command_line_console(lista):
                     comanda_separata = executa[i].split(",")
                     if comanda_separata[0] == "add":
                         if len(comanda_separata) != 6:
-                            raise ValueError("Trebuie sa introduceti exact 5 comenzi! ")
+                            raise ValueError("Trebuie sa introduceti exact 5 date adica id,nume,pret,locatie,descriere! ")
                         id = comanda_separata[1]
                         nume = comanda_separata[2]
                         descriere = comanda_separata[3]
@@ -41,7 +41,7 @@ def command_line_console(lista):
                         print("S-a sters un obiect")
                     elif comanda_separata[0] == "update":
                         if len(comanda_separata) != 6:
-                            raise ValueError("Trebuie sa introduceti exact 5 date! ")
+                            raise ValueError("Trebuie sa introduceti exact 5 date adica id nume pret deescriere si locatie! ")
                         id = comanda_separata[1]
                         nume = comanda_separata[2]
                         descriere = comanda_separata[3]
