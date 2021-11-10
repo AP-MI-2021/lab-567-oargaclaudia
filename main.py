@@ -9,5 +9,5 @@ def main():
     lista=[]
     lista=adaugaObiect("1", "Dulap", "Utilizat pentru depozitarea obiectelor", 550.2, "APSM", lista)
     lista=adaugaObiect("2", "Veioza", "Utilizat pentru luminarea spatiului de lucru", 100, "ASAC", lista)
-    command_line_console(lista)
+    runMenu(lista)
 main()
